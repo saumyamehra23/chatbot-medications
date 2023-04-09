@@ -1,0 +1,14 @@
+import datetime
+
+def chatbot():
+    current_time = datetime.datetime.now()
+    medication_time = datetime.datetime(current_time.year, current_time.month, current_time.day, 9, 0, 0) # 9:00 AM
+    
+    if current_time == medication_time:
+        print("It's time to take your medication!")
+        # code to send a reminder message to the user's device (e.g., phone)
+    else:
+        print("You do not need to take your medication right now.")
+        
+chatbot()
+
